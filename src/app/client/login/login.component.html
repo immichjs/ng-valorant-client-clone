@@ -1,0 +1,40 @@
+<div class="container-account">
+  <header class="container-account-riot">
+    <img src="../../assets/images/800px-Riot_Games_logo.svg.png">
+  </header>
+
+  <h1 class="top-container">Fazer login</h1>
+
+  <div class="form-account">
+    <div>
+      <input required type='text' [ngModel]="account.username"
+        (ngModelChange)="enableAccessAccount($event, 'username')">
+      <label placeholder="Nome de usuário"></label>
+    </div>
+    <div>
+      <input required [type]='passwordType' [ngModel]="account.password"
+        (ngModelChange)="enableAccessAccount($event, 'password')">
+      <label placeholder="Senha"></label>
+      <i class='bx bxs-show password-state' *ngIf="passwordType === 'password'; else hidePassword"
+        (click)="enablePasswordView()"></i>
+      <ng-template #hidePassword>
+        <i class='bx bxs-hide password-state' (click)="enablePasswordView()"></i>
+      </ng-template>
+    </div>
+
+    <div class="save-account">
+      <input type="checkbox" id="save-account">
+      <label for="save-account">Manter login</label>
+    </div>
+
+    <div class="access-account" [ngClass]="{ 'active-access-account': activeAccessAccount ? true : false }">
+      <i class='bx bxs-right-arrow-alt' [ngStyle]="{ 'color': activeAccessAccount  ? '#fff' : '#e8e8e8' }"></i>
+    </div>
+
+    <div class="account-stuations">
+      <a href="#">Não consegue iniciar sessão?</a>
+      <a href="#">Criar conta</a>
+    </div>
+
+    <p class="version">V58.0.0</p>
+  </div>

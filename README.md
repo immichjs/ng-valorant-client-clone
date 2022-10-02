@@ -1,27 +1,43 @@
-# ValorantClientCloneAngular
+# Riot Client Clone
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.2.
+O intuíto desse projeto, é clonar o client do VALORANT (Riot Games) aos poucos, primeiramente a interface e assim que possível melhorar as funcionalidades parecidas com a do próprio client.
 
-## Development server
+Logo abaixo você poderá ver algumas telas já existentes no projeto com funcionalidades (ou não).
+<p align="start">
+    <img src="https://i.imgur.com/DHwV1XW.png">
+</p>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Começando
 
-## Code scaffolding
+Para inicilizar esse projeto, é necessário ter duas ferramentas instaladas em sua máquina, o [Git](https://git-scm.com/) e o [Node.js](https://nodejs.org/).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Clone o projeto com os comando abaixo:
+```
+$ git clone https://github.com/immichjs/ng-valorant-client-clone.git
 
-## Build
+$ cd ng-valorant-client-clone
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Logo após, instale todas as dependencias com:
+```
+$ npm i
+```
 
-## Running unit tests
+### Para iniciar um servidor de desenvolvimento
+```
+$ npm run start
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Compila todo o projeto para produção
+```
+$ npm run build
+```
 
-## Running end-to-end tests
+Leia as documentações abaixo para continuar seu desenvolvimento com essas tecnologias.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- [SASS](https://sass-lang.com)
+- [Angular](https://br.vuejs.org/)
+- [Boxicons](https://boxicons.com/usage/)
 
-## Further help
+<p align="center">Feito com 💖 por Mich</p>
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
